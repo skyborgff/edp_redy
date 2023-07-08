@@ -7,7 +7,7 @@ import requests
 from awscrt import io
 from warrant.aws_srp import AWSSRP
 
-from consts import POOL_ID, CLIENT_ID, POOL_REGION
+from .consts import POOL_ID, CLIENT_ID, POOL_REGION
 
 io.init_logging(io.LogLevel.Error, 'stderr')
 

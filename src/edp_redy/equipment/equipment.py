@@ -4,9 +4,9 @@ from typing import Any
 from typing import List
 from uuid import UUID
 
-from authenticate import AuthenticationResult
-from consts import ENDPOINT
-from helpers import from_str, from_datetime, from_none, from_int, from_list, from_float, from_bool
+from ..authenticate import AuthenticationResult
+from ..consts import ENDPOINT
+from ..helpers import from_str, from_datetime, from_none, from_int, from_list, from_float, from_bool
 
 
 # This code parses date/times, so please

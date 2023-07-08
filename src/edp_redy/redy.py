@@ -1,6 +1,6 @@
-from authenticate import authenticate, AuthenticationResult
-from edp_mqtt import EDPMQTT
-from usermanagement.usermanagement import UserManagement
+from .authenticate import authenticate, AuthenticationResult
+from .edp_mqtt import EDPMQTT
+from .usermanagement.usermanagement import UserManagement
 
 
 class Redy:
