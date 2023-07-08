@@ -10,9 +10,7 @@ setup(
     packages=find_packages('src'),
     package_dir={'': 'src'},
     url='https://github.com/skyborgff/edp_redy',
-    keywords='example project',
-    install_requires=[
-          'scikit-learn',
-      ],
+    keywords='EDP',
+    install_requires=[],
 
 )

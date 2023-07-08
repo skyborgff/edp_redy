@@ -1,9 +1,7 @@
 from datetime import datetime
-from typing import Any, TypeVar, Type, cast
+from typing import Any
 from uuid import UUID
 
-import dateutil.parser
-import requests
 from authenticate import AuthenticationResult
 from consts import ENDPOINT
 from helpers import from_str, from_datetime, from_none

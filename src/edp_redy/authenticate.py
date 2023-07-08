@@ -1,16 +1,10 @@
 import json
-import json
-import sys
-import threading
-import time
-import uuid
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 from typing import Any
 
 import requests
-from awscrt import http, auth, io, mqtt
-from awsiot import mqtt_connection_builder
+from awscrt import io
 from warrant.aws_srp import AWSSRP
 
 from consts import POOL_ID, CLIENT_ID, POOL_REGION

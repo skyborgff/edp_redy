@@ -1,13 +1,9 @@
 from datetime import datetime
 from datetime import datetime
-from typing import Any, List, TypeVar, Callable, Type, cast
-from typing import Any, TypeVar, Type, cast
-from uuid import UUID
+from typing import Any
+from typing import List
 from uuid import UUID
 
-import dateutil.parser
-import dateutil.parser
-import requests
 from authenticate import AuthenticationResult
 from consts import ENDPOINT
 from helpers import from_str, from_datetime, from_none, from_int, from_list, from_float, from_bool

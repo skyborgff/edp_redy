@@ -1,7 +1,7 @@
 import uuid
 from typing import Callable
 
-from awscrt import http, auth, io, mqtt
+from awscrt import auth, io, mqtt
 from awscrt.mqtt import Connection
 from awsiot import mqtt_connection_builder
 
