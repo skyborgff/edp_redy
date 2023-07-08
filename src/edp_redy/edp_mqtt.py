@@ -5,9 +5,9 @@ from awscrt import auth, io, mqtt
 from awscrt.mqtt import Connection
 from awsiot import mqtt_connection_builder
 
-from authenticate import AuthenticationResult
-from consts import POOL_REGION, POOL_ID, HOST
-from usermanagement.usermanagement import User
+from .authenticate import AuthenticationResult
+from .consts import POOL_REGION, POOL_ID, HOST
+from .usermanagement.usermanagement import User
 
 
 class EDPMQTT:
