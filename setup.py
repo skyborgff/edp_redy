@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='edp_redy_py',
-    version='0.1',
+    version='0.1.1',
     license='Apache 2.0',
     author="Fábio Ferreira",
     author_email='fabiorcferreira@gmail.com',
