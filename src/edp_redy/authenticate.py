@@ -14,7 +14,7 @@ io.init_logging(io.LogLevel.Error, 'stderr')
 
 def authenticate(USERNAME, PASSWORD):
     aws = AWSSRP(username=USERNAME, password=PASSWORD, pool_id=POOL_ID, client_id=CLIENT_ID, pool_region=POOL_REGION)
-    authentication = AuthenticationResult.from_dict(json.loads(aws.authenticate_user()))
+    authentication = AuthenticationResult.from_dict(aws.authenticate_user()["AuthenticationResult"])
     return authentication
 
 

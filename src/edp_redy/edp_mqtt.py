@@ -18,12 +18,11 @@ class EDPMQTT:
         self.authentication = authentication
 
     def get_cognito_provider(self, user: User) -> auth.AwsCredentialsProvider:
-        cognito_endpoint = f"cognito-identity.{POOL_REGION}.amazonaws.com"
         credentials_provider = auth.AwsCredentialsProvider.new_cognito(
-            endpoint=cognito_endpoint,
+            endpoint=f"cognito-identity.{POOL_REGION}.amazonaws.com",
             identity=user.identity_id,
             tls_ctx=io.ClientTlsContext(io.TlsContextOptions()),
-            logins=[(f"{cognito_endpoint}/{POOL_ID}", self.authentication.IdToken)]
+            logins=[(f"cognito-idp.{POOL_REGION}.amazonaws.com/{POOL_ID}", self.authentication.IdToken)]
         )
         return credentials_provider
 
